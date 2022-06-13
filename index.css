@@ -35,6 +35,7 @@ section:nth-child(2n) {
 
 section{
     display: block;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     width: 534px;
@@ -45,6 +46,7 @@ section{
     padding-top: 11px;
     padding-left: 12px;
     transition: all .1s ease-in;
+    
 }
 
 [action]{
@@ -121,17 +123,26 @@ input{
     margin-right: 16px;
 }
 
-section:hover{
+/*section:hover{
     background: #625E77;
     outline: 3px solid #ffffff;
     outline-offset: -3px;
     
-}
+}*/
 
 section:active{
     background: #FF8984;
 }
 
-section:checked {
-    text-decoration: line-through;
+  input[type="checkbox"]:checked + label  {
+  text-decoration: line-through;
+  color: #9b96ac;
+}
+
+form > section:hover,
+form > section:focus {
+  background-color: #625e77;
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  transition: all 0.1s ease-in;
 }
