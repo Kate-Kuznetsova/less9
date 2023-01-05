@@ -1,0 +1,149 @@
+*{
+    font-family: \'Trebuchet MS\', Trebuchet, Arial, sans-serif;
+}
+
+header h1{
+    font-size: 24px;
+    padding-top: 19px;
+    padding-bottom: 4px;
+    margin-block-start: 0em;
+    margin-block-end:0em;
+    text-align: center;
+}
+
+h1+h2{
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+header, button{
+    background: #4A4F56;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FF8984;
+}
+
+.violet{
+    background: #88839E;
+}
+
+section:nth-child(2n) {
+    background: #7A7593;
+}
+
+section{
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 534px;
+    height: 45px;
+    left: 129px;
+    top: 102px;
+    color: #FFFFFF;
+    padding-top: 11px;
+    padding-left: 12px;
+    transition: all .1s ease-in;
+    border-top: 0.17em solid transparent;
+    border-bottom: 0.17em solid transparent;
+}
+
+[action]{
+    font-size: 18px;
+}
+
+#pickles::after {
+    content: "(for the next lessons about CSS)"; 
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+#apples::after {
+    content: "(for more CSS manipulations)"; 
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+#oranges::after {
+    content: "(because they are awesome)"; 
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+#plates::after {
+    content: "(hm... they always dissapear)"; 
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+#bottle::after {
+    content: "(for my friends)"; 
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+h1::before {
+    content: "CSS "; 
+    font-size: 24px;
+}
+
+body{
+    background: #3B3F45;
+    margin:0;
+    padding:0;
+    border: 9px solid #ffffff;
+}
+
+header{
+    margin:0;
+}
+
+button{
+    font-size: 18px;
+    width: 545px;
+    height: 45px;
+    left: 129px;
+    top: 417px;
+    border: 0;
+    margin-top: 45px;
+}
+
+input{
+    margin-right: 16px;
+}
+
+/*section:hover{
+    background: #625E77;
+    outline: 3px solid #ffffff;
+    outline-offset: -3px;
+    
+}*/
+
+section:active{
+    background: #FF8984;
+}
+
+  input[type="checkbox"]:checked + label  {
+  text-decoration: line-through;
+  color: #9b96ac;
+}
+
+form > section:hover,
+form > section:focus {
+  background-color: #625e77;
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  transition: all 0.1s ease-in;
+}
