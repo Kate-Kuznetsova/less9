@@ -46,7 +46,8 @@ section{
     padding-top: 11px;
     padding-left: 12px;
     transition: all .1s ease-in;
-    
+    border-top: 0.17em solid transparent;
+    border-bottom: 0.17em solid transparent;
 }
 
 [action]{
